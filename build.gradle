@@ -36,5 +36,6 @@ repositories { // 각종 의존성(라이브러리) 들을 어떤 원격 저장�
 
 dependencies { //프로젝트 개발에 필요한 의존성들을 선언하는 곳이다. 
     compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
