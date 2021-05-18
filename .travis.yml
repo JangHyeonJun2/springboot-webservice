@@ -21,8 +21,8 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AKIA4PAY5UU4VMHS4TMJ # Travis repo settings에 설정된 값
-    secret_access_key: $0i9ohKefHJctq5+dO3qg2Wakj3ebMSVrDU3dPoSS # Travis repo settings에 설정된 값
+    access_key_id: AKIA4PAY5UU4VMHS4TMJ # Travis repo settings에 설정된 값
+    secret_access_key: 0i9ohKefHJctq5+dO3qg2Wakj3ebMSVrDU3dPoSS # Travis repo settings에 설정된 값
     bucket: picturespot # S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
@@ -34,8 +34,8 @@ deploy:
       branch: master
 
   - provider: codedeploy
-    access_key_id: $AKIA4PAY5UU4VMHS4TMJ # Travis repo settings에 설정된 값
-    secret_access_key: $0i9ohKefHJctq5+dO3qg2Wakj3ebMSVrDU3dPoSS # Travis repo settings에 설정된 값
+    access_key_id: AKIA4PAY5UU4VMHS4TMJ # Travis repo settings에 설정된 값
+    secret_access_key: 0i9ohKefHJctq5+dO3qg2Wakj3ebMSVrDU3dPoSS # Travis repo settings에 설정된 값
     bucket: picturespot # S3 버킷
     key: springboot-webservice.zip # S3 버킷에 저장된 springboot-webservice.zip 파일을 EC2로 배포
     bundle_type: zip
