@@ -5,6 +5,18 @@ files:
     destination: /home/ec2-user/app/step2/zip/ # (3)
     overwrite: yes # (4)
 
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
+hooks:
+  AfterInstall:
+    - location: stop.sh # 엔진엑스와 연결되어 있지 않은 스프링 부트를 종료합니다.
+      timeout: 60
+      runas: ec2-user
+
 # 1번
   # - CodeDeploy 버전을 이야기 합니다.
   # - 프로젝트 버전이 아니므로 0.0 이외에 다른 버전을 사용하면 오류가 발생한다.
