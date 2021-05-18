@@ -18,3 +18,15 @@ notifications:  # 4번
   email:
     recipients:
       - epfvkdlxj@naver.com
+
+
+
+        # 주석
+        # 1번 :branches
+        # - Travis CI를 어느 브랜치가 푸시될 때 수행할지 지정한다.
+        # - 현재옵션은 오직 master 브랜치에 push될 때만 수행한다.
+        # 2번 :cache
+        # - 그레이들을 통해 의존성을 받게 되면 이를 해당 디렉토리에 캐시하여, 같은 의존성은 다음 배포 때부터 다시 받지 않도록 설정한다.
+        # 3번 :script
+        # - master 브랜치에 푸시되었을 때 수행하는 명령어이다.
+         # - 여기서는 프로젝트 내부에 둔 gradlew을 통해 clean & build를 수행한다.
