@@ -20,7 +20,7 @@ notifications:  # 4번
     recipients:
       - epfvkdlxj@naver.com
 
-
+# 주석
 # 1번 :branches
         # - Travis CI를 어느 브랜치가 푸시될 때 수행할지 지정한다.
         # - 현재옵션은 오직 master 브랜치에 push될 때만 수행한다.
