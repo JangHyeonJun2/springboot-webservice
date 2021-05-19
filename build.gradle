@@ -26,7 +26,7 @@ apply plugin: 'io.spring.dependency-management'
 //}
 
 group 'com.jjy.webservice'
-version '1.0.1-SNAPSHOT-' + new Date().format("yyyyMMddHHmmss")
+version '1.0.1-SNAPSHOT-' + new Date().format("yyyyMMddHHmmss") //groovy 문법이다.
 sourceCompatibility = 1.8
 
 repositories { // 각종 의존성(라이브러리) 들을 어떤 원격 저장소에서 받을지를 정한다.
